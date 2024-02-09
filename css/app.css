@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color:#1f2235;
+    font-size: 25px;
+}
+header nav {
+    background-color: #ff4b57;
+}
+header nav ul {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: auto;
+    float:right;
+    gap: 70px;
+    margin-right: 70px;
+}
+header nav ul li {
+    list-style: none;
+    
+}
+header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+}
+header nav ul li a:hover{
+    background-color: #ff4b57;
+    border-radius: 20px;
+    border: solid black 2px;
+    transition: 1s;
+}
+main .flex {
+    display: flex;
+    flex-direction: row;
+}
+main .content {
+    display: flex;
+    align-items: flex-start;
+    float: left;
+    flex-direction: column;
+    margin-left: 70px;
+    
+}
+main .content h1 {
+    
+    font-weight: bold;
+    color:#ff4b57;
+  
+}
+main .content h4 {
+    color: white;
+    font-weight: bold;
+  
+}
+main .content article h4 {
+    color: #ff4b57;
+    font-weight: bold;
+}
+main .content article p {
+    color: white;
+    font-weight: bold;
+}
+main aside img {
+    float: right;
+    height: 200px;
+    margin-right: 120px;
+    border-radius: 30px;
+    border: 5px solid #ff4b57;
+    margin-top: 160px;
+}
+footer {
+    background-color: #ff4b57;
+    color: #ff4b57;
+}
+footer p{
+    margin-left: 150px;
+    color: white;
+    display: inline;
+    background-color: #ff4b57;
+    text-align: center;
+    
+    margin-top: 50px;
+}
+@media screen and (max-width:768px){
+    * {
+        font-size: 15px;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    main {
+        padding: 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+       }
+       main .content article h4 {
+        font-size: 3rem;
+       }
+       main .content article p {
+        font-size: 1rem;
+       }
+       main .flex {
+       display: flex;
+       flex-direction: column;
+    }
+    main .flex aside img {
+        
+       display: none;
+       
+      }
+
+    
+    
